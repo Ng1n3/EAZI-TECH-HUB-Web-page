@@ -1,0 +1,44 @@
+.jobs {
+    grid-area: 3 / 2 / 5 / 3;
+}
+
+.jobs__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    grid-gap: 2rem;
+
+    &__item {
+        padding: 2rem 1.5rem;
+        background-color: $color-white;
+        border-radius: 1rem;
+    }
+
+    &__customer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__status {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.customer {
+    width: 4rem;
+    height: 4rem;
+}
+
+.jobs__container__status .heading-6 {
+    color: $color-secondary-2;
+}
+
+.state-2 + .percentage-3 {
+    color: $color-primary-2;
+}
+
+.state-3 + .percentage-3 {
+    color: $color-primary-2;
+}

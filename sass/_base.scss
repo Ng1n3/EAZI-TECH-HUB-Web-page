@@ -1,0 +1,42 @@
+/** Color Variables **/
+$color-primary-1: #7B27E7;
+$color-primary-2: #453C67;
+
+$Color-secondary-1: #9CD9FB;
+$color-secondary-2: #03C988;
+$color-white: #fff;
+
+/**Font Variables */
+$font-display: 'Poppins', sans-serif;
+$font-primary: 'work Sans', sans-serif;
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px/16px = 62.5% => 1rem = 10px
+}
+
+body {
+    font-family: $font-primary;
+    color: $color-primary-2;
+    line-height: 1.6;
+    background-color: $Color-secondary-1;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 114rem;
+    display: grid;
+    grid-template-columns: [side-start] minmax(15rem, 30rem) [side-end  full-start] minmax(min-content, max-content) minmax(28rem, 30rem);
+    grid-template-rows: 10rem repeat(4, min-content);
+    grid-gap: 2rem;
+}

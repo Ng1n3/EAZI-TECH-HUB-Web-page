@@ -1,0 +1,75 @@
+.summary {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.summary__title {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.summary__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    grid-gap: 1rem;
+    align-items: start;
+}
+
+.summaryList {
+    width: 25rem;
+    height: 12rem;
+    padding: 1rem;
+}
+
+.cardTop {
+    width: 100%;
+    height: 100%;
+    background-color: $color-primary-1;
+    position: relative;
+    color: $color-white;
+    border-radius: 1rem;
+    z-index: 1;
+
+    &__stroke {
+        margin: 1rem 0;
+        padding-left: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        height: 100%;
+
+        &__stroke {
+            width: .25rem;
+            height: 80%;
+            margin: 1rem 0;
+            border-radius: 5px;
+            background-color: $color-white;
+        }
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+    }
+
+    &__cardBelow {
+        margin: 0 1.5rem;
+        background-color: $color-white;
+        width: 20rem;
+        height: 1rem;
+        position: absolute;
+        z-index: 10;
+        bottom: -1rem;
+        border-radius: 0 0 8px 8px;
+    }
+}
+
+.title {
+    color: $color-white;
+}
+
+.jobs {
+    color: $color-white;
+}

@@ -1,0 +1,51 @@
+.vip {
+    grid-area: 4 / 3 / 5 / 4;
+    margin-left: .5rem;
+}
+
+.vip__heading {
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+        fill: $color-primary-2;
+        rotate: 45deg;
+        cursor: pointer;
+        transition: all .2s;
+
+
+        &:hover {
+            fill: $color-primary-1;
+            transform: scale(1.3);
+        }
+
+    }
+}
+
+.vip__body {
+    background-color: $color-white;
+    padding: 3rem 1.8rem;
+    border-radius: 1rem;
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__avatarInfo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+    }
+}
+
+.avatar {
+    width: 3rem;
+    height: 3rem;
+}

@@ -1,0 +1,41 @@
+.notification {
+    grid-area: 2 / 3 / 4 / 4;
+    margin-left: .5rem;
+}
+
+.notification__heading {
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+        fill: $color-primary-2;
+        rotate: 45deg;
+        cursor: pointer;
+        transition: all .2s;
+
+        &:hover {
+            fill: $color-primary-1;
+            transform: scale(1.3);
+        }
+    }
+}
+
+.notification__body {
+    background-color: $color-white;
+    padding: 3rem 1.8rem;
+    border-radius: 1rem;
+
+    &__item {
+        display: flex;
+        gap: 1.2rem;
+
+    }
+}
+
+.heading-6 {
+    color: $Color-secondary-1;
+}
