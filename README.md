@@ -2,6 +2,8 @@
 
 A tech business that specializes in the sale, maintenance, and setup of computer hardware and software a portal with a single webpage that provides quick access to the features and operations of the business, such as sales, inventories, and other operations carried out by the organization
 
+Checkout the webpage [live](https://ng1n3.github.io/EAZI-TECH-HUB-Web-page/)
+
 ## Prerequisites
 * npm >= 6.14.13
 * node >= 14.17.0
